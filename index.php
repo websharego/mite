@@ -26,30 +26,43 @@
                 position: absolute;
                 right: 271px;
             }
-            .main-content {
-                position: relative;
-                height: 700px;
-                /*background-color: #f5f5f5;*/
+            .main-content{
+                background: cyan;
                 margin: auto 271px;
             }
-            .right , .left{
-                top: 40px;
-                position: absolute;
-                height: 400px;
-                /*background-color: blue;*/
-                width: 560px;
+            .left-panel, .right-panel {
+                min-height: 400px;
+                background: red;
+                width: 60%;
+                float: left;
             }
-            .right{
-               right: 0px;
-               width: 400px;
-               background-color: white;
+            .right-panel{
+                background:  yellow;
+                width: 40%; 
+                background-color: #fafbfc;
+
             }
-            .main-content form label{
+            .footer{
+                clear: both;
+                background-color: cyan;
+            }
+            .right-panel label{
                 display: block;
+                margin-bottom: 5px;
             }
-            
-            
-            
+            .right-panel input{
+                width: 100%;
+                height: 30px;
+            }
+
+            .right-panel div{
+                padding: 15px;
+                padding-bottom: 5px;
+            }
+            .right-panel input[type="submit"]{
+                width: 100px;
+                height: 35px;
+            }
         </style>
     </head>
     <body>
@@ -63,28 +76,29 @@
                 </form>
             </div>
             <div class="main-content">
-                <div class="left">
-                    <h1>Design. Develop. Deploy. Enjoy</h1>
-                    <div>
-                        Join with thousands of developers accross the world, share your problem and get the solution
-                        Join with thousands of developers accross the world, share your problem and get the solution
-                        Join with thousands of developers accross the world, share your problem and get the solution
-                        Join with thousands of developers accross the world, share your problem and get the solution
-                    </div>
+                <div class="left-panel">
+                    left panel
                 </div>
-                <div class="right">
+                <div class="right-panel">
                     <form>
                         <div>
-                            <label>First name</label>
-                            <input type="text" name="firstname"/>
+                            <label>First Name</label>
+                            <input type="text" name="firstname" />
                         </div>
                         <div>
-                            <label>First name</label>
-                            <input type="text" name="firstname"/>
+                            <label>Surname</label>
+                            <input type="text" name="surname" />
                         </div>
                         <div>
-                            <label>First name</label>
-                            <input type="text" name="firstname"/>
+                            <label>Password</label>
+                            <input type="password" name="password" />
+                        </div>
+                        <div>
+                            <label>Confirm password</label>
+                            <input type="password" name="cpassword" />
+                        </div>
+                        <div>
+                            <input type="submit" name="register" value="Register" />
                         </div>
                     </form>
                 </div>
